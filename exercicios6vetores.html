@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    // 6. Número aleatório até acertar
+    // ● Gere um número aleatório entre 1 e 10. Solicite ao usuário que adivinhe o número,
+    // repetindo o pedido até ele acertar. Use um do...while.
+
+    let c = Math.floor(Math.random() * 10)
+    let escreva = 0;
+
+    do {
+        escreva = prompt("Digite um numero ate que acerte ! :) ");
+    }
+    while (c != Number(escreva))
+
+    document.write("Parabéns, você acertou o numero " + c)
+
+    // if (c == escreva) {
+    //     document.write("correto");
+    // }
+    // else {
+    //     document.write("errado");
+    // }
+
+
+
+
+
+</script>
