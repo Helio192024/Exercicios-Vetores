@@ -1,0 +1,28 @@
+<script type="text/javascript">
+
+
+    // 10. Contar vogais em uma palavra
+    // ● Solicite ao usuário que insira uma palavra. Use um for para contar quantas vogais
+    // (a, e, i, o, u) existem na palavra.
+
+    let palavra = prompt("Digite uma palavra: ")
+    // palavra = "yuri"
+    let array = palavra.split("")
+    // array = ["y","u","r","i"]
+    let contadorVogais = 0
+    let contadorConsoantes = 0
+    let vogais = ["a", "e", "i", "o", "u"]
+    console.log(array)
+
+
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < vogais.length; j++) {
+            if (array[i] == vogais[j]) {
+                contadorVogais++;
+                break;
+            }
+        }
+    }
+    document.write("A quantidade de vogais " + contadorVogais);
+
+</script>
